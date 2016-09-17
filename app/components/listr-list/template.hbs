@@ -1,13 +1,13 @@
 {{!-- {{yield}} --}}
 
 
-   <h2 {{action 'toggleListDetail'}}>{{list.title}}</h2>
+   <h2 {{action 'toggleListDetail'}}>{{test.title}}</h2>
 
-   {{#each list.items as |item|}}
+   {{#each test.items as |item|}}
        {{!-- <li>{{item.content}}</li> --}}
 
 
-       {{!-- reference component for list items --}}
+       {{!-- reference component for list items, item = item as in each helper |list| --}}
        {{listr-list/items item=item}}
 
    {{/each}}

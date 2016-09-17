@@ -1,7 +1,7 @@
 
 
 
-{{#each model as |list|}}
+{{#each model as |something|}}
 
 {{!-- <h2>{{list.title}}</h2>
 
@@ -10,7 +10,7 @@
    {{/each}} --}}
 
 
-   {{!-- reference listr-list Component --}}
-   {{listr-list list=list}}
+   {{!-- reference listr-list Component, something in component is referenced as test --}}
+   {{listr-list test=something}}
 
 {{/each}}
